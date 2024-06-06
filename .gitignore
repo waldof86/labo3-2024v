@@ -185,3 +185,5 @@ project/target
 sell-in.txt
 tb_productos.txt
 tb_stocks.txt
+
+lightning_logs/*.*
