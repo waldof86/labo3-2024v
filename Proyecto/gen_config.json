@@ -1,7 +1,7 @@
 {
-    "nombre_exp": "2024-06-23_NuevoScript",
-    "folder": "./Experimentos/2024-06-23_NuevoScript/",
-    "path_group": "01_group",
+    "nombre_exp": "2024-06-23_12Lags",
+    "folder": "./Experimentos/2024-06-23_12Lags/",
+    "path_group": "01_group.parquet",
     "path_prod_stats": "01_prod_stats.parquet",
     "path_prod_data_group": "01_prod_data_group.parquet",
     "path_prod_data_ungroup": "01_prod_data_ungroup.parquet",
@@ -13,7 +13,7 @@
     "path_futuro": "04_futuro.parquet",
     "path_pred_test": "05_pred_test.parquet",
     "path_pred_futuro": "05_pred_futuro.parquet",
-    "path_kaggle": "06_kaggle_pred.csv",
+    "path_kaggle": "kaggle_2024-06-23_12Lags.csv",
     "var_periodo_rep_start": 201912,
     "var_periodo_rep_end": 201912,
     "var_lags": [
@@ -28,13 +28,7 @@
         9,
         10,
         11,
-        12,
-        15,
-        18,
-        21,
-        24,
-        30,
-        36
+        12
     ],
     "var_cates_feat": [
         "cat1",
@@ -55,7 +49,8 @@
         "boosting_type": "gbdt",
         "num_leaves": 40,
         "max_bin": 1023,
-        "learning_rate": 0.01
+        "learning_rate": 0.01,
+        "force_col_wise": true
     },
     "var_dibujar_pesos": false
 }
