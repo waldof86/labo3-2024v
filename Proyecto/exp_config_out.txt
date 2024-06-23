@@ -1,0 +1,16 @@
+......................................................Experimento.......................................................
+-------------------------------------------------2024-06-23_NuevoScript-------------------------------------------------
+CARPETA.............: ./Experimentos/2024-06-23_NuevoScript/
+group...............: 01_group ( ./Experimentos/2024-06-23_NuevoScript/01_group )
+prod_stats..........: 01_prod_stats.parquet ( ./Experimentos/2024-06-23_NuevoScript/01_prod_stats.parquet )
+prod_data_group.....: 01_prod_data_group.parquet ( ./Experimentos/2024-06-23_NuevoScript/01_prod_data_group.parquet )
+prod_data_ungroup...: 01_prod_data_ungroup.parquet ( ./Experimentos/2024-06-23_NuevoScript/01_prod_data_ungroup.parquet )
+stock_data..........: 01_stock_data.parquet ( ./Experimentos/2024-06-23_NuevoScript/01_stock_data.parquet )
+norm................: 02_norm.parquet ( ./Experimentos/2024-06-23_NuevoScript/02_norm.parquet )
+lag.................: 03_lag.parquet ( ./Experimentos/2024-06-23_NuevoScript/03_lag.parquet )
+train...............: 04_train.parquet ( ./Experimentos/2024-06-23_NuevoScript/04_train.parquet )
+test................: 04_test.parquet ( ./Experimentos/2024-06-23_NuevoScript/04_test.parquet )
+futuro..............: 04_futuro.parquet ( ./Experimentos/2024-06-23_NuevoScript/04_futuro.parquet )
+pred_test...........: 05_pred.parquet ( ./Experimentos/2024-06-23_NuevoScript/05_pred.parquet )
+pred_futuro.........: 05_pred_futuro.parquet ( ./Experimentos/2024-06-23_NuevoScript/05_pred_futuro.parquet )
+kaggle..............: 06_kaggle_pred.csv ( ./Experimentos/2024-06-23_NuevoScript/06_kaggle_pred.csv )
