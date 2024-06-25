@@ -1,6 +1,6 @@
 {
-    "nombre_exp": "2024-06-23_12Lags",
-    "folder": "./Experimentos/2024-06-23_12Lags/",
+    "nombre_exp": "2024-06-24_Prueba",
+    "folder": "./Experimentos/2024-06-24_Prueba/",
     "path_group": "01_group.parquet",
     "path_prod_stats": "01_prod_stats.parquet",
     "path_prod_data_group": "01_prod_data_group.parquet",
@@ -13,7 +13,7 @@
     "path_futuro": "04_futuro.parquet",
     "path_pred_test": "05_pred_test.parquet",
     "path_pred_futuro": "05_pred_futuro.parquet",
-    "path_kaggle": "kaggle_2024-06-23_12Lags.csv",
+    "path_kaggle": "kaggle_2024-06-24_Prueba.csv",
     "var_periodo_rep_start": 201912,
     "var_periodo_rep_end": 201912,
     "var_lags": [
@@ -28,7 +28,13 @@
         9,
         10,
         11,
-        12
+        12,
+        15,
+        18,
+        21,
+        24,
+        30,
+        36
     ],
     "var_cates_feat": [
         "cat1",
@@ -36,8 +42,13 @@
         "brand",
         "descripcion"
     ],
-    "var_periodo_train_start": 201701,
-    "var_periodo_train_end": 201909,
+    "var_exclusiones": [
+        "group_index",
+        "periodo",
+        "periodo_dt"
+    ],
+    "var_periodo_train_start": 201801,
+    "var_periodo_train_end": 201910,
     "var_periodo_test": 201910,
     "var_periodo_futuro": 201912,
     "var_lgbm_params": {
@@ -47,10 +58,11 @@
             "rmse"
         ],
         "boosting_type": "gbdt",
-        "num_leaves": 40,
+        "num_leaves": 100,
         "max_bin": 1023,
         "learning_rate": 0.01,
-        "force_col_wise": true
+        "force_col_wise": true,
+        "verbose": -1
     },
     "var_dibujar_pesos": false
 }

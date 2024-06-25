@@ -185,6 +185,9 @@ project/target
 sell-in.txt
 tb_productos.txt
 tb_stocks.txt
+productos_a_predecir.txt
+tb_productos_descripcion.txt
+tb_productos_viejo.txt
 
 lightning_logs/*.*
 /Proyecto/Experimentos/
