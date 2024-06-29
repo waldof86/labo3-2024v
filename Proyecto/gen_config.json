@@ -1,21 +1,27 @@
 {
-    "nombre_exp": "2024-06-24_Prueba",
-    "folder": "./Experimentos/2024-06-24_Prueba/",
+    "nombre_exp": "2024-06-27_NivelProducto",
+    "folder": "./Experimentos/2024-06-27_NivelProducto/",
     "path_group": "01_group.parquet",
     "path_prod_stats": "01_prod_stats.parquet",
-    "path_prod_data_group": "01_prod_data_group.parquet",
-    "path_prod_data_ungroup": "01_prod_data_ungroup.parquet",
+    "path_prod_data": "01_prod_data.parquet",
     "path_stock_data": "01_stock_data.parquet",
     "path_norm": "02_norm.parquet",
+    "path_dtw": "02b_dtw.parquet",
     "path_lag": "03_lag.parquet",
     "path_train": "04_train.parquet",
     "path_test": "04_test.parquet",
     "path_futuro": "04_futuro.parquet",
     "path_pred_test": "05_pred_test.parquet",
     "path_pred_futuro": "05_pred_futuro.parquet",
-    "path_kaggle": "kaggle_2024-06-24_Prueba.csv",
-    "var_periodo_rep_start": 201912,
-    "var_periodo_rep_end": 201912,
+    "path_kaggle": "kaggle_2024-06-27_NivelProducto.csv",
+    "var_ejecutar_dtw": false,
+    "var_clusters": [
+        5,
+        10,
+        15,
+        20
+    ],
+    "var_dibujar_dtw": false,
     "var_lags": [
         1,
         2,
@@ -42,15 +48,12 @@
         "brand",
         "descripcion"
     ],
-    "var_exclusiones": [
-        "group_index",
-        "periodo",
-        "periodo_dt"
-    ],
-    "var_periodo_train_start": 201801,
+    "var_exclusiones": [],
+    "var_periodo_train_start": 201701,
     "var_periodo_train_end": 201910,
     "var_periodo_test": 201910,
     "var_periodo_futuro": 201912,
+    "var_num_boost_round": 2000,
     "var_lgbm_params": {
         "objective": "regression",
         "metric": [
@@ -58,11 +61,16 @@
             "rmse"
         ],
         "boosting_type": "gbdt",
-        "num_leaves": 100,
+        "bagging_fraction": 0.9,
+        "bagging_freq": 1,
+        "num_leaves": 40,
+        "max_depth": -1,
+        "feature_fraction": 0.9,
         "max_bin": 1023,
-        "learning_rate": 0.01,
+        "learning_rate": 0.015,
         "force_col_wise": true,
-        "verbose": -1
+        "num_threads": 8,
+        "verbose": 1
     },
     "var_dibujar_pesos": false
 }
