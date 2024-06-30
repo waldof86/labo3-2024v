@@ -7,6 +7,9 @@
     "path_stock_data": "01_stock_data.parquet",
     "path_norm": "02_norm.parquet",
     "path_dtw": "02b_dtw.parquet",
+    "path_traindtw": "02b_traindtw.npy",
+    "path_fitdtw": "02b_fitdtw.npy",
+    "path_dtw_model": "02b_dtw_model.pkl",
     "path_lag": "03_lag.parquet",
     "path_train": "04_train.parquet",
     "path_test": "04_test.parquet",
@@ -14,14 +17,13 @@
     "path_pred_test": "05_pred_test.parquet",
     "path_pred_futuro": "05_pred_futuro.parquet",
     "path_kaggle": "kaggle_2024-06-27_NivelProducto.csv",
-    "var_ejecutar_dtw": false,
+    "var_ejecutar_dtw": true,
     "var_clusters": [
-        5,
-        10,
-        15,
-        20
+        10
     ],
     "var_dibujar_dtw": false,
+    "var_corte_prod_dtw": 20100,
+    "var_leer_pickle_dtw": true,
     "var_lags": [
         1,
         2,
