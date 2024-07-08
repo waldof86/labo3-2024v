@@ -11,7 +11,7 @@
     "path_dtw": "02b_dtw.parquet",
     "path_traindtw": "02b_traindtw.npy",
     "path_fitdtw": "02b_fitdtw.npy",
-    "path_dtw_model": "02b_dtw_model.pkl",
+    "path_dtw_model": "02b_dtw_model",
     "path_lag": "03_lag.parquet",
     "path_train": "04_train.parquet",
     "path_test": "04_test.parquet",
@@ -21,7 +21,7 @@
     "path_kaggle": "kaggle_2024-07-06_FillZero.csv",
     "var_ejecutar_dtw": true,
     "var_clusters": [
-        30
+        20
     ],
     "var_dibujar_dtw": false,
     "var_leer_pickle_dtw": false,
@@ -49,7 +49,7 @@
         "descripcion"
     ],
     "var_periodo_train_start": 201701,
-    "var_periodo_train_end": 201909,
+    "var_periodo_train_end": 201910,
     "var_periodo_test": 201910,
     "var_periodo_futuro": 201912,
     "var_num_boost_round": 5000,
