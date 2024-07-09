@@ -1,6 +1,6 @@
 {
-    "nombre_exp": "2024-07-06_FillZero",
-    "folder": "./Experimentos/2024-07-06_FillZero/",
+    "nombre_exp": "2024-07-09_Candidato",
+    "folder": "./Experimentos/2024-07-09_Candidato/",
     "path_group": "01_group.parquet",
     "path_prod_stats": "01_prod_stats.parquet",
     "path_prod_data": "01_prod_data.parquet",
@@ -18,10 +18,11 @@
     "path_futuro": "04_futuro.parquet",
     "path_pred_test": "05_pred_test.parquet",
     "path_pred_futuro": "05_pred_futuro.parquet",
-    "path_kaggle": "kaggle_2024-07-06_FillZero.csv",
+    "path_kaggle": "kaggle_2024-07-09_Candidato.csv",
+    "var_escalado": "tn_robust",
     "var_ejecutar_dtw": true,
     "var_clusters": [
-        20
+        15
     ],
     "var_dibujar_dtw": false,
     "var_leer_pickle_dtw": false,
