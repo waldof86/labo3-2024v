@@ -51,7 +51,7 @@
         "descripcion"
     ],
     "var_periodo_train_start": 201701,
-    "var_periodo_train_end": 201910,
+    "var_periodo_train_end": 201909,
     "var_periodo_test": 201910,
     "var_periodo_futuro": 201912,
     "var_num_boost_round": 5000,
