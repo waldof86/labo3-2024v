@@ -191,3 +191,9 @@ tb_productos_viejo.txt
 
 lightning_logs/*.*
 /Proyecto/Experimentos/
+
+/Exclusiones/*.*
+
+Exclusiones/
+
+*.mp4

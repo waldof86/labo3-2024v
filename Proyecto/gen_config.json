@@ -7,7 +7,6 @@
     "path_overall_prod_stats": "01_overall_prod_stats.parquet",
     "path_stock_data": "01_stock_data.parquet",
     "path_norm": "02_norm.parquet",
-    "path_transform_stats": "02_transform_stats.parquet",
     "path_dtw": "02b_dtw.parquet",
     "path_traindtw": "02b_traindtw.npy",
     "path_fitdtw": "02b_fitdtw.npy",
@@ -21,9 +20,10 @@
     "path_kaggle": "kaggle_2024-07-09_Candidato.csv",
     "path_semillerio": "semillerio_2024-07-09_Candidato.csv",
     "var_escalado": "tn_robust",
+    "var_withmean": false,
     "var_ejecutar_dtw": true,
     "var_clusters": [
-        15
+        3
     ],
     "var_dibujar_dtw": false,
     "var_leer_pickle_dtw": false,
@@ -64,16 +64,16 @@
         "boosting_type": "gbdt",
         "bagging_fraction": 0.9,
         "bagging_freq": 1,
-        "num_leaves": 40,
+        "num_leaves": 70,
         "max_depth": -1,
         "feature_fraction": 0.9,
         "max_bin": 1023,
         "learning_rate": 0.01,
         "force_col_wise": true,
-        "num_threads": 8,
+        "num_threads": 16,
         "verbose": 1,
         "early_stopping_rounds": 10,
-        "weight_column": "avg_weight"
+        "weight_column": "mean_weight"
     },
     "var_dibujar_pesos": false,
     "var_exclusiones": [
